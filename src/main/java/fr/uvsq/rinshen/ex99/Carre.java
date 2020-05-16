@@ -4,6 +4,12 @@ public class Carre extends Forme {
 	private Point centre;
 	private int cote;
 
+	/**
+	 * Constructeur de la classe Carre.
+	 * @param nom Nom du carré
+	 * @param p Point au centre du carré
+	 * @param largeur Taille du coté du carré
+	 */
 	public Carre(String nom, Point p, int largeur) {
 		points = 4;
 		this.nom = nom;

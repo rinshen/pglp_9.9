@@ -5,6 +5,13 @@ public class Rectangle extends Forme {
 	private int largeur;
 	private int hauteur;
 
+	/**
+	 * Constructeur de la classe Rectangle.
+	 * @param nom Nom du rectangle
+	 * @param p Point au centre du rectangle
+	 * @param largeur Largeur du rectangle
+	 * @param hauteur Hauteur du rectangle
+	 */
 	public Rectangle(String nom, Point p, int largeur, int hauteur) {
 		points = 4;
 		this.nom = nom;
