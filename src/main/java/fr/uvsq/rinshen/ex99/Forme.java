@@ -1,9 +1,18 @@
 package fr.uvsq.rinshen.ex99;
 
-public class Forme 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+public abstract class Forme {
+	protected int points;
+	protected String nom;
+
+	public abstract void move(int horizontal, int vertical);
+
+	public abstract void afficher();
+	
+	public int getPoints() {
+		return points;
+	}
+
+	public String getNom() {
+		return nom;
+	}
 }

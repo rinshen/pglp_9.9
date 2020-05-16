@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Carre.java">
+<error line="7" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Cercle.java">
+<error line="7" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Forme.java">
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Point.java">
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Rectangle.java">
+<error line="8" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Triangle.java">
+<error line="8" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+</checkstyle>
