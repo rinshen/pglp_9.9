@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.29">
-<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Carre.java">
-</file>
 <file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CarreDao.java">
-<error line="14" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="26" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="43" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-</file>
-<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Cercle.java">
+<error line="33" severity="warning" message="La ligne excède 100 caractères (trouvé 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="52" severity="warning" message="La première phrase de la Javadoc doit se terminer avec un point." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
 </file>
 <file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CercleDao.java">
 <error line="14" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="26" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="43" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
-<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\DataAccessObject.java">
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\GroupeCompositeDao.java">
+<error line="15" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="28" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="46" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="64" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="97" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="104" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
-<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Forme.java">
-</file>
-<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Rectangle.java">
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\GroupeSimpleDao.java">
+<error line="15" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="28" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="63" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\RectangleDao.java">
 <error line="14" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="27" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="44" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-</file>
-<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Triangle.java">
 </file>
 <file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\TriangleDao.java">
 <error line="14" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>

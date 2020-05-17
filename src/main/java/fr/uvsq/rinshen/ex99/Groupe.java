@@ -19,4 +19,12 @@ public abstract class Groupe {
 	public ArrayList<Forme> getFormes() {
 		return formes;
 	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public int getIdType() {
+		return idType;
+	}
 }

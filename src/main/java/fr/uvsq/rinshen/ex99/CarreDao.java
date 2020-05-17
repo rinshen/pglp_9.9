@@ -49,6 +49,10 @@ public class CarreDao implements DataAccessObject<Carre> {
 		return c;
 	}
 
+	/**
+	 * Supprime un objet de type Carre de la base de données
+	 * @param nom Nom de l'objet a supprimer
+	 */
 	public void supprimer(String nom) {
 		try {
 			db.executeUpdate("delete from carre where nom = " + nom);

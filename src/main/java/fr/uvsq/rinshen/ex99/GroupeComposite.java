@@ -3,7 +3,7 @@ package fr.uvsq.rinshen.ex99;
 import java.util.ArrayList;
 
 public class GroupeComposite extends Groupe {
-	private ArrayList<Forme> sousGroupes;
+	private ArrayList<Groupe> sousGroupes;
 	
 	/**
 	 * Constructeur pour le groupe composite.
@@ -12,14 +12,14 @@ public class GroupeComposite extends Groupe {
 	public GroupeComposite(String nom) {
 		super(nom);
 		idType = 1;
-		sousGroupes = new ArrayList<Forme>();
+		sousGroupes = new ArrayList<Groupe>();
 	}
 	
-	public void ajouteGroupe(Forme f) {
+	public void ajouteGroupe(Groupe f) {
 		sousGroupes.add(f);
 	}
 	
-	public ArrayList<Forme> getSousGroupes() {
+	public ArrayList<Groupe> getSousGroupes() {
 		return sousGroupes;
 	}
 }
