@@ -11,7 +11,7 @@ public class Cercle extends Forme {
 	 * @param r Rayon du cercle
 	 */
 	public Cercle(String nom, Point p, int r) {
-		points = 1;
+		type = 1;
 		this.nom = nom;
 		rayon = r;
 		centre = p;
@@ -29,5 +29,13 @@ public class Cercle extends Forme {
 		System.out.println("Centre:");
 		centre.afficher();
 		System.out.println("");
+	}
+
+	public Point getCentre() {
+		return centre;
+	}
+
+	public int getRayon() {
+		return rayon;
 	}
 }

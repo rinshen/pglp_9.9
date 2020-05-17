@@ -11,7 +11,7 @@ public class Carre extends Forme {
 	 * @param largeur Taille du coté du carré
 	 */
 	public Carre(String nom, Point p, int largeur) {
-		points = 4;
+		type = 2;
 		this.nom = nom;
 		centre = p;
 		cote = largeur;
@@ -29,5 +29,13 @@ public class Carre extends Forme {
 		System.out.println("Centre:");
 		centre.afficher();
 		System.out.println("");
+	}
+
+	public Point getCentre() {
+		return centre;
+	}
+
+	public int getCote() {
+		return cote;
 	}
 }

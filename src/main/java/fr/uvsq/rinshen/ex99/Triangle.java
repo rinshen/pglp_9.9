@@ -13,7 +13,7 @@ public class Triangle extends Forme {
 	 * @param p3 Troisième point du triangle
 	 */
 	public Triangle(String nom, Point p1, Point p2, Point p3) {
-		points = 3;
+		type = 3;
 		this.nom = nom;
 		this.p1 = p1;
 		this.p2 = p2;
@@ -37,5 +37,17 @@ public class Triangle extends Forme {
 		System.out.println("Point 3:");
 		p3.afficher();
 		System.out.println("");
+	}
+
+	public Point getP1() {
+		return p1;
+	}
+
+	public Point getP2() {
+		return p2;
+	}
+
+	public Point getP3() {
+		return p3;
 	}
 }

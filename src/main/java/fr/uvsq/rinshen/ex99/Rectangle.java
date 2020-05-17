@@ -13,7 +13,7 @@ public class Rectangle extends Forme {
 	 * @param hauteur Hauteur du rectangle
 	 */
 	public Rectangle(String nom, Point p, int largeur, int hauteur) {
-		points = 4;
+		type = 4;
 		this.nom = nom;
 		centre = p;
 		this.largeur = largeur;
@@ -33,5 +33,17 @@ public class Rectangle extends Forme {
 		System.out.println("Centre:");
 		centre.afficher();
 		System.out.println("");
+	}
+
+	public Point getCentre() {
+		return centre;
+	}
+
+	public int getLargeur() {
+		return largeur;
+	}
+
+	public int getHauteur() {
+		return hauteur;
 	}
 }
