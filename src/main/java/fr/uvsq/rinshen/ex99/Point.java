@@ -15,8 +15,8 @@ public class Point {
 	}
 	
 	public void afficher() {
-		System.out.println("abscisse: " + abs);
-		System.out.println("ordonées: " + ord);
+		System.out.println("--abscisses: " + abs);
+		System.out.println("--ordonnées: " + ord);
 	}
 
 	public int getAbs() {

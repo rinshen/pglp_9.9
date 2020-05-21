@@ -8,6 +8,12 @@ public class DrawingTui {
 		if (commande.equals("affiche")) {
 			return new CommandAffiche();
 		}
+		if (commande.equals("enregistrer")) {
+			return new CommandSave();
+		}
+		if (commande.equals("charger")) {
+			return new CommandSave();
+		}
 		return new CommandCreate();
 	}
 }

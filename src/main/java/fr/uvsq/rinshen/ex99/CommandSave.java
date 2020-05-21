@@ -8,10 +8,13 @@ import java.sql.Statement;
 public class CommandSave implements Command {
 	public void execute(Dessin dessin, String commande) {
 		Statement db = null;
+		Connection c = null;
 		try {
 			String url = "jdbc:derby:./database/dessin;create=true";
-			Connection c = DriverManager.getConnection(url);
+			c = DriverManager.getConnection(url);
 			db = c.createStatement();
+			InitBd ini = new InitBd(db);
+			ini.init();
 		} catch (SQLException e) {
 			System.out.println("Impossible de se connecter à la base de données");
 			e.printStackTrace();
@@ -39,6 +42,11 @@ public class CommandSave implements Command {
 			if(dessin.getFormes().get(i).getType() == 4) {
 				triangle.ecrire((Triangle)dessin.getFormes().get(i));
 			}
+		}
+		try {
+			c.close();
+		} catch (SQLException e) {
+			System.out.println("Impossible de fermer la base de données");
 		}
 	}
 }
