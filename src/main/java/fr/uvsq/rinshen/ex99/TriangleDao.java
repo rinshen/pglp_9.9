@@ -34,8 +34,8 @@ public class TriangleDao implements DataAccessObject<Triangle> {
 		Point p3;
 		try {
 			table = db.executeQuery("select * from triangle "
-					+ "where nom = "
-					+ nom);
+					+ "where nom = '"
+					+ nom + "'");
 			table.next();
 			p1 = new Point(table.getInt(2), table.getInt(3));
 			p2 = new Point(table.getInt(4), table.getInt(5));
@@ -49,7 +49,7 @@ public class TriangleDao implements DataAccessObject<Triangle> {
 
 	public void supprimer(String nom) {
 		try {
-			db.executeUpdate("delete from triangle where nom = " + nom);
+			db.executeUpdate("delete from triangle where nom = '" + nom + "'");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

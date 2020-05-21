@@ -10,7 +10,7 @@ public class DrawingApp {
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		DrawingTui tui = new DrawingTui();
 		String commande = "";
-		while (commande != "exit") {
+		while (!commande.equals("exit")) {
 			commande = scanner.nextLine();
 			tui.nextCommand(commande).execute(dessin, commande);
 		}

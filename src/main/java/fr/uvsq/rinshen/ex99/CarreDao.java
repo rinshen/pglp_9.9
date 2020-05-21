@@ -38,8 +38,8 @@ public class CarreDao implements DataAccessObject<Carre> {
 		Point p;
 		try {
 			table = db.executeQuery("select * from carre "
-					+ "where nom = "
-					+ nom);
+					+ "where nom = '"
+					+ nom +"'");
 			table.next();
 			p = new Point(table.getInt(3), table.getInt(4));
 			c = new Carre(nom, p, table.getInt(2));
@@ -55,7 +55,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 	 */
 	public void supprimer(String nom) {
 		try {
-			db.executeUpdate("delete from carre where nom = " + nom);
+			db.executeUpdate("delete from carre where nom = '" + nom + "'");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

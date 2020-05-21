@@ -35,18 +35,20 @@ public class CommandSave implements Command {
 		}
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
 			if(dessin.getFormes().get(i).getType() == 3) {
-				rectangle.ecrire((Rectangle)dessin.getFormes().get(i));
+				triangle.ecrire((Triangle)dessin.getFormes().get(i));
 			}
 		}
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
 			if(dessin.getFormes().get(i).getType() == 4) {
-				triangle.ecrire((Triangle)dessin.getFormes().get(i));
+				rectangle.ecrire((Rectangle)dessin.getFormes().get(i));
 			}
 		}
+		dessin.reinit();
 		try {
 			c.close();
 		} catch (SQLException e) {
 			System.out.println("Impossible de fermer la base de données");
 		}
+		System.out.println("Enregistrement terminé");
 	}
 }

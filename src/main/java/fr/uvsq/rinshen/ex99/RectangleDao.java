@@ -30,8 +30,8 @@ public class RectangleDao implements DataAccessObject<Rectangle> {
 		Point p;
 		try {
 			table = db.executeQuery("select * from rectangle "
-					+ "where nom = "
-					+ nom);
+					+ "where nom = '"
+					+ nom + "'");
 			table.next();
 			p = new Point(table.getInt(4), table.getInt(5));
 			r = new Rectangle(nom, p, table.getInt(2), table.getInt(3));
@@ -43,7 +43,7 @@ public class RectangleDao implements DataAccessObject<Rectangle> {
 
 	public void supprimer(String nom) {
 		try {
-			db.executeUpdate("delete from rectangle where nom = " + nom);
+			db.executeUpdate("delete from rectangle where nom = '" + nom + "'");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

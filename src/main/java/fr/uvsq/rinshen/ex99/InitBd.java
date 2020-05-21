@@ -45,7 +45,7 @@ public class InitBd {
 	
 	public void initTriangle(){
 		try {
-			db.executeUpdate("create table simple ("
+			db.executeUpdate("create table triangle ("
 					+ "nom varchar(30) primary key, "
 					+ "abs1 int, "
 					+ "abs2 int, "
@@ -60,7 +60,7 @@ public class InitBd {
 	
 	public void initRectangle(){
 		try {
-			db.executeUpdate("create table simple ("
+			db.executeUpdate("create table rectangle ("
 					+ "nom varchar(30) primary key, "
 					+ "largeur int, "
 					+ "hauteur int, "

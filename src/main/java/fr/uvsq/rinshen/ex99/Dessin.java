@@ -11,6 +11,11 @@ public class Dessin {
 		groupes = new ArrayList<Groupe>();
 	}
 
+	public void reinit() {
+		formes = new ArrayList<Forme>();
+		groupes = new ArrayList<Groupe>();
+	}
+	
 	public ArrayList<Forme> getFormes() {
 		return formes;
 	}

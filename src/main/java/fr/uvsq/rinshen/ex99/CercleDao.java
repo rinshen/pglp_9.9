@@ -29,8 +29,8 @@ public class CercleDao implements DataAccessObject<Cercle> {
 		Point p;
 		try {
 			table = db.executeQuery("select * from cercle "
-					+ "where nom = "
-					+ nom);
+					+ "where nom = '"
+					+ nom + "'");
 			table.next();
 			p = new Point(table.getInt(3), table.getInt(4));
 			c = new Cercle(nom, p, table.getInt(2));
@@ -42,7 +42,7 @@ public class CercleDao implements DataAccessObject<Cercle> {
 
 	public void supprimer(String nom) {
 		try {
-			db.executeUpdate("delete from cercle where nom = " + nom);
+			db.executeUpdate("delete from cercle where nom = '" + nom + "'");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

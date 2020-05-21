@@ -11,7 +11,7 @@ public class CommandLoad implements Command {
 	public void execute(Dessin dessin, String commande) {
 		Statement db = null;
 		Connection c = null;
-		InitBd ini = new InitBd(db);
+		dessin.reinit();
 		
 		try {
 			String url = "jdbc:derby:./database/dessin;create=true";
@@ -28,12 +28,15 @@ public class CommandLoad implements Command {
 		lireRectangles(dessin, db);
 		lireTriangles(dessin, db);
 		
+
+		InitBd ini = new InitBd(db);
 		ini.efface();
 		try {
 			c.close();
 		} catch (SQLException e) {
 			System.out.println("Impossible de fermer la base de données");
 		}
+		System.out.println("Chargement terminé");
 	}
 	
 	/**

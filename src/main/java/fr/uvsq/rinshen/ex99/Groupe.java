@@ -12,6 +12,12 @@ public abstract class Groupe {
 		this.formes = new ArrayList<Forme>();
 	}
 	
+	public void move(int horizontal, int vertical) {
+		for(int i = 0; i < formes.size(); i++) {
+			formes.get(i).move(horizontal, vertical);
+		}
+	}
+	
 	public void ajouteFormes(Forme f) {
 		formes.add(f);
 	}
