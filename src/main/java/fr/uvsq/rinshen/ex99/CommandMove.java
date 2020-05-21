@@ -1,22 +1,20 @@
 package fr.uvsq.rinshen.ex99;
 
-import java.util.ArrayList;
-
 public class CommandMove implements Command {
-	public void execute(ArrayList<Forme> dessin, String commande) {
+	public void execute(Dessin dessin, String commande) {
 		String[] form = commande.split(" ");
 		boolean find = false;
-		if(form.length != 4) {
+		if (form.length != 4) {
 			System.out.println("Commande invalide");
 			return;
 		}
-		for(int i = 0; i < dessin.size(); i++) {
-			if(dessin.get(i).getNom() == form[1]) {
-				dessin.get(i).move(Integer.parseInt(form[2]), Integer.parseInt(form[3]));
+		for (int i = 0; i < dessin.getFormes().size(); i++) {
+			if (dessin.getFormes().get(i).getNom().equals(form[1])) {
+				dessin.getFormes().get(i).move(Integer.parseInt(form[2]), Integer.parseInt(form[3]));
 				find = true;
 			}
 		}
-		if(!find) {
+		if (!find) {
 			System.out.println("Aucune forme ne possède ce nom");
 		}
 	}

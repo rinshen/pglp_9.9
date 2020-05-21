@@ -1,5 +1,7 @@
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Groupe.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Point.java
+C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CommandAffiche.java
+C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CommandMove.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\RectangleDao.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Triangle.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\TriangleDao.java
@@ -9,8 +11,12 @@ C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CercleD
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Forme.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Rectangle.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\GroupeCompositeDao.java
+C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CommandCreate.java
+C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Command.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CarreDao.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\GroupeSimple.java
+C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\DrawingApp.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\GroupeSimpleDao.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\Cercle.java
 C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\DataAccessObject.java
+C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\DrawingTui.java

@@ -9,6 +9,30 @@
 <error line="26" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="43" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CommandAffiche.java">
+<error line="6" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CommandCreate.java">
+<error line="6" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="16" severity="warning" message="La ligne excède 100 caractères (trouvé 111)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="26" severity="warning" message="La ligne excède 100 caractères (trouvé 111)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="36" severity="warning" message="La ligne excède 100 caractères (trouvé 111)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="37" severity="warning" message="La ligne excède 100 caractères (trouvé 131)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="46" severity="warning" message="La ligne excède 100 caractères (trouvé 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="47" severity="warning" message="La ligne excède 100 caractères (trouvé 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="48" severity="warning" message="La ligne excède 100 caractères (trouvé 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="55" severity="warning" message="La ligne excède 100 caractères (trouvé 103)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\CommandMove.java">
+<error line="6" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="15" severity="warning" message="La ligne excède 100 caractères (trouvé 105)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\DrawingApp.java">
+<error line="10" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\DrawingTui.java">
+<error line="4" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
 <file name="C:\Users\khanj\eclipse-workspace\ex99\src\main\java\fr\uvsq\rinshen\ex99\GroupeCompositeDao.java">
 <error line="15" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="28" column="9" severity="warning" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>

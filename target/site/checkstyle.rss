@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 6,
+      <title>File: 11,
              Errors: 0,
-             Warnings: 20,
+             Warnings: 34,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -53,6 +53,20 @@ under the License.
                 </td>
                 <td>
                   3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandAffiche.java">fr/uvsq/rinshen/ex99/CommandAffiche.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
                 <td>
                   0
@@ -102,6 +116,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandMove.java">fr/uvsq/rinshen/ex99/CommandMove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.GroupeSimpleDao.java">fr/uvsq/rinshen/ex99/GroupeSimpleDao.java</a>
                 </td>
                 <td>
@@ -116,6 +144,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.DrawingTui.java">fr/uvsq/rinshen/ex99/DrawingTui.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.GroupeCompositeDao.java">fr/uvsq/rinshen/ex99/GroupeCompositeDao.java</a>
                 </td>
                 <td>
@@ -123,6 +165,34 @@ under the License.
                 </td>
                 <td>
                   6
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.DrawingApp.java">fr/uvsq/rinshen/ex99/DrawingApp.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandCreate.java">fr/uvsq/rinshen/ex99/CommandCreate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
                 </td>
                 <td>
                   0
