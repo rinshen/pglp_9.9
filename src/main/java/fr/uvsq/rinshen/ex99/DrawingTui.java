@@ -5,6 +5,9 @@ public class DrawingTui {
 		if (commande.startsWith("move ")) {
 			return new CommandMove();
 		}
+		if (commande.startsWith("grouper ")) {
+			return new CommandGroupe();
+		}
 		if (commande.equals("afficher")) {
 			return new CommandAffiche();
 		}

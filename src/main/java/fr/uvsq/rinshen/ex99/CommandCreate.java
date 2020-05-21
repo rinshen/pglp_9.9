@@ -49,11 +49,19 @@ public class CommandCreate implements Command {
 			if (form.length < 2) {
 				System.out.println("Il manque un ou plusieurs arguments");
 			} else {
-				;
+				GroupeSimple g = new GroupeSimple(form[1]);
+				dessin.getGroupes().add(g);
 			}
+			return;
 		}
 		if (form[0].equals("composite")) {
-			;
+			if (form.length < 2) {
+				System.out.println("Il manque un ou plusieurs arguments");
+			} else {
+				GroupeComposite g = new GroupeComposite(form[1]);
+				dessin.getGroupes().add(g);
+			}
+			return;
 		}
 		System.out.println("Forme non reconnue");
 		System.out.println(form[0] + " n'est pas une forme prise en charge par l'application");

@@ -5,5 +5,8 @@ public class CommandAffiche implements Command {
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
 			dessin.getFormes().get(i).afficher();
 		}
+		for (int i = 0; i < dessin.getGroupes().size(); i++) {
+			dessin.getGroupes().get(i).afficher();
+		}
 	}
 }

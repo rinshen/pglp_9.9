@@ -18,6 +18,13 @@ public abstract class Groupe {
 		}
 	}
 	
+	public void afficher() {
+		System.out.println("\ncontenu du groupe " + nom);
+		for(int i = 0; i < formes.size(); i++) {
+			formes.get(i).afficher();
+		}
+	}
+	
 	public void ajouteFormes(Forme f) {
 		formes.add(f);
 	}
@@ -32,5 +39,9 @@ public abstract class Groupe {
 
 	public int getIdType() {
 		return idType;
+	}
+	
+	public void aplanir() {
+		
 	}
 }
