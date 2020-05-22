@@ -13,14 +13,14 @@ public abstract class Groupe {
 	}
 	
 	public void move(int horizontal, int vertical) {
-		for(int i = 0; i < formes.size(); i++) {
+		for (int i = 0; i < formes.size(); i++) {
 			formes.get(i).move(horizontal, vertical);
 		}
 	}
 	
 	public void afficher() {
 		System.out.println("\ncontenu du groupe " + nom);
-		for(int i = 0; i < formes.size(); i++) {
+		for (int i = 0; i < formes.size(); i++) {
 			formes.get(i).afficher();
 		}
 	}

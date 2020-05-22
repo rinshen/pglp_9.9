@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 11,
+      <title>File: 15,
              Errors: 0,
-             Warnings: 34,
+             Warnings: 54,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -46,34 +46,6 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.TriangleDao.java">fr/uvsq/rinshen/ex99/TriangleDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandAffiche.java">fr/uvsq/rinshen/ex99/CommandAffiche.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.RectangleDao.java">fr/uvsq/rinshen/ex99/RectangleDao.java</a>
                 </td>
                 <td>
@@ -81,20 +53,6 @@ under the License.
                 </td>
                 <td>
                   3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CarreDao.java">fr/uvsq/rinshen/ex99/CarreDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
                 </td>
                 <td>
                   0
@@ -122,7 +80,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   0
@@ -137,6 +95,20 @@ under the License.
                 </td>
                 <td>
                   3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandLoad.java">fr/uvsq/rinshen/ex99/CommandLoad.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
                 </td>
                 <td>
                   0
@@ -172,6 +144,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.InitBd.java">fr/uvsq/rinshen/ex99/InitBd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandSave.java">fr/uvsq/rinshen/ex99/CommandSave.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.DrawingApp.java">fr/uvsq/rinshen/ex99/DrawingApp.java</a>
                 </td>
                 <td>
@@ -192,7 +192,63 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.TriangleDao.java">fr/uvsq/rinshen/ex99/TriangleDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandAffiche.java">fr/uvsq/rinshen/ex99/CommandAffiche.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.Groupe.java">fr/uvsq/rinshen/ex99/Groupe.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandGroupe.java">fr/uvsq/rinshen/ex99/CommandGroupe.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
                 <td>
                   0

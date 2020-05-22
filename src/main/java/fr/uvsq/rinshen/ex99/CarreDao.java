@@ -30,7 +30,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 	/**
 	 * Lit un objet de type Carre dans la base de données.
 	 * @param nom Nom du cercle
-	 * @return Objet de type Carre initialisé ou null si le nom n'apparait pas dans la base de données
+	 * @return Objet de type Carre initialisé ou null en cas d'erreur
 	 */
 	public Carre lire(String nom) {
 		Carre c = null;
@@ -39,7 +39,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 		try {
 			table = db.executeQuery("select * from carre "
 					+ "where nom = '"
-					+ nom +"'");
+					+ nom + "'");
 			table.next();
 			p = new Point(table.getInt(3), table.getInt(4));
 			c = new Carre(nom, p, table.getInt(2));
@@ -50,7 +50,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 	}
 
 	/**
-	 * Supprime un objet de type Carre de la base de données
+	 * Supprime un objet de type Carre de la base de données.
 	 * @param nom Nom de l'objet a supprimer
 	 */
 	public void supprimer(String nom) {

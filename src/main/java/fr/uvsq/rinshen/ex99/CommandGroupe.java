@@ -23,15 +23,21 @@ public class CommandGroupe implements Command {
 		}
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
 			if (dessin.getFormes().get(i).getNom().equals(form[2])) {
-				dessin.getGroupes().get(groupe).ajouteFormes(dessin.getFormes().get(i));
+				dessin.getGroupes()
+						.get(groupe)
+						.ajouteFormes(dessin.getFormes().get(i));
 				dessin.getFormes().remove(i);
 				f = true;
 			}
 		}
 		if (!f) {
 			for (int i = 0; i < dessin.getGroupes().size(); i++) {
-				if (dessin.getGroupes().get(i).getNom().equals(form[2]) && (dessin.getGroupes().get(groupe).getIdType() == 1)) {
-					((GroupeComposite)dessin.getGroupes().get(groupe)).ajouteGroupe(dessin.getGroupes().get(i));
+				if (dessin.getGroupes().get(i).getNom().equals(form[2])
+						&& (dessin.getGroupes()
+								.get(groupe)
+								.getIdType() == 1)) {
+					((GroupeComposite)dessin.getGroupes().get(groupe))
+							.ajouteGroupe(dessin.getGroupes().get(i));
 					dessin.getGroupes().remove(i);
 					f = true;
 				}

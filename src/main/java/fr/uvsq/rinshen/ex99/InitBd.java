@@ -10,7 +10,7 @@ public class InitBd {
 		db = database;
 	}
 	
-	public void init(){
+	public void init() {
 		initCercle();
 		initCarre();
 		initTriangle();
@@ -19,7 +19,7 @@ public class InitBd {
 		initComposite();
 	}
 	
-	public void initCercle(){
+	public void initCercle() {
 		try {
 			db.executeUpdate("create table cercle ("
 					+ "nom varchar(30) primary key, "
@@ -31,7 +31,7 @@ public class InitBd {
 		}
 	}
 	
-	public void initCarre(){
+	public void initCarre() {
 		try {
 			db.executeUpdate("create table carre ("
 					+ "nom varchar(30) primary key, "
@@ -43,7 +43,7 @@ public class InitBd {
 		}
 	}
 	
-	public void initTriangle(){
+	public void initTriangle() {
 		try {
 			db.executeUpdate("create table triangle ("
 					+ "nom varchar(30) primary key, "
@@ -58,7 +58,7 @@ public class InitBd {
 		}
 	}
 	
-	public void initRectangle(){
+	public void initRectangle() {
 		try {
 			db.executeUpdate("create table rectangle ("
 					+ "nom varchar(30) primary key, "
@@ -71,7 +71,7 @@ public class InitBd {
 		}
 	}
 	
-	public void initSimple(){
+	public void initSimple() {
 		try {
 			db.executeUpdate("create table simple ("
 					+ "idForme int primary key, "
@@ -81,7 +81,7 @@ public class InitBd {
 		}
 	}
 
-	public void initComposite(){
+	public void initComposite() {
 		try {
 			db.executeUpdate("create table composite ("
 					+ "idSimple int primary key, "
@@ -91,7 +91,7 @@ public class InitBd {
 		}
 	}
 	
-	public void efface(){
+	public void efface() {
 		effaceCercle();
 		effaceCarre();
 		effaceRectangle();
@@ -100,7 +100,7 @@ public class InitBd {
 		effaceComposite();
 	}
 	
-	public void effaceCercle(){
+	public void effaceCercle() {
 		try {
 			db.executeUpdate("Drop table cercle");
 		} catch (SQLException e) {
@@ -108,7 +108,7 @@ public class InitBd {
 		}
 	}
 	
-	public void effaceCarre(){
+	public void effaceCarre() {
 		try {
 			db.executeUpdate("Drop table carre");
 		} catch (SQLException e) {
@@ -116,7 +116,7 @@ public class InitBd {
 		}
 	}
 	
-	public void effaceRectangle(){
+	public void effaceRectangle() {
 		try {
 			db.executeUpdate("Drop table triangle");
 		} catch (SQLException e) {
@@ -124,7 +124,7 @@ public class InitBd {
 		}
 	}
 	
-	public void effaceTriangle(){
+	public void effaceTriangle() {
 		try {
 			db.executeUpdate("Drop table rectangle");
 		} catch (SQLException e) {
@@ -132,7 +132,7 @@ public class InitBd {
 		}
 	}
 	
-	public void effaceSimple(){
+	public void effaceSimple() {
 		try {
 			db.executeUpdate("Drop table simple");
 		} catch (SQLException e) {
@@ -140,7 +140,7 @@ public class InitBd {
 		}
 	}
 
-	public void effaceComposite(){
+	public void effaceComposite() {
 		try {
 			db.executeUpdate("Drop table composite");
 		} catch (SQLException e) {

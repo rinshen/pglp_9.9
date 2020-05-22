@@ -15,7 +15,9 @@ public class CommandMove implements Command {
 			}
 			for (int i = 0; i < dessin.getGroupes().size(); i++) {
 				if (dessin.getGroupes().get(i).getNom().equals(form[2])) {
-					dessin.getGroupes().get(i).move(Integer.parseInt(form[3]), Integer.parseInt(form[4]));
+					dessin.getGroupes().get(i).move(
+							Integer.parseInt(form[3]), 
+							Integer.parseInt(form[4]));
 					find = true;
 				}
 			}
@@ -29,7 +31,9 @@ public class CommandMove implements Command {
 			}
 			for (int i = 0; i < dessin.getFormes().size(); i++) {
 				if (dessin.getFormes().get(i).getNom().equals(form[1])) {
-					dessin.getFormes().get(i).move(Integer.parseInt(form[2]), Integer.parseInt(form[3]));
+					dessin.getFormes().get(i).move(
+							Integer.parseInt(form[2]), 
+							Integer.parseInt(form[3]));
 					find = true;
 				}
 			}

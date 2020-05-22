@@ -17,10 +17,10 @@ public class GroupeComposite extends Groupe {
 	
 	@Override
 	public void move(int horizontal, int vertical) {
-		for(int i = 0; i < formes.size(); i++) {
+		for (int i = 0; i < formes.size(); i++) {
 			formes.get(i).move(horizontal, vertical);
 		}
-		for(int i = 0; i < sousGroupes.size(); i++) {
+		for (int i = 0; i < sousGroupes.size(); i++) {
 			sousGroupes.get(i).move(horizontal, vertical);
 		}
 	}
@@ -29,18 +29,18 @@ public class GroupeComposite extends Groupe {
 	public void afficher() {
 		System.out.println("\n\ncontenu du groupe " + nom);
 		System.out.println("formes:");
-		for(int i = 0; i < formes.size(); i++) {
+		for (int i = 0; i < formes.size(); i++) {
 			formes.get(i).afficher();
 		}
 		System.out.println("groupes:");
-		for(int i = 0; i < sousGroupes.size(); i++) {
+		for (int i = 0; i < sousGroupes.size(); i++) {
 			sousGroupes.get(i).afficher();
 		}
 	}
 	
 	@Override
 	public void aplanir() {
-		for(int i = 0; i < sousGroupes.size(); i++) {
+		for (int i = 0; i < sousGroupes.size(); i++) {
 			sousGroupes.get(i).aplanir();
 			formes.addAll(sousGroupes.get(i).getFormes());
 		}

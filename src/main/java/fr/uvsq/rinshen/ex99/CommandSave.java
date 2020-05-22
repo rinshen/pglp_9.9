@@ -36,7 +36,7 @@ public class CommandSave implements Command {
 	}
 	
 	public void videGroupes(Dessin dessin) {
-		for(int i = 0; i < dessin.getGroupes().size(); i++) {
+		for (int i = 0; i < dessin.getGroupes().size(); i++) {
 			dessin.getGroupes().get(i).aplanir();
 			dessin.getFormes().addAll(dessin.getGroupes().get(i).getFormes());
 		}
@@ -45,7 +45,7 @@ public class CommandSave implements Command {
 	public void enregistrerCercle(Dessin dessin, Statement db) {
 		CercleDao dao = new CercleDao(db);
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
-			if(dessin.getFormes().get(i).getType() == 1) {
+			if (dessin.getFormes().get(i).getType() == 1) {
 				dao.ecrire((Cercle)dessin.getFormes().get(i));
 			}
 		}
@@ -54,7 +54,7 @@ public class CommandSave implements Command {
 	public void enregistrerCarre(Dessin dessin, Statement db) {
 		CarreDao dao = new CarreDao(db);
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
-			if(dessin.getFormes().get(i).getType() == 2) {
+			if (dessin.getFormes().get(i).getType() == 2) {
 				dao.ecrire((Carre)dessin.getFormes().get(i));
 			}
 		}
@@ -63,7 +63,7 @@ public class CommandSave implements Command {
 	public void enregistrerTriangle(Dessin dessin, Statement db) {
 		TriangleDao dao = new TriangleDao(db);
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
-			if(dessin.getFormes().get(i).getType() == 3) {
+			if (dessin.getFormes().get(i).getType() == 3) {
 				dao.ecrire((Triangle)dessin.getFormes().get(i));
 			}
 		}
@@ -72,7 +72,7 @@ public class CommandSave implements Command {
 	public void enregistrerRectangle(Dessin dessin, Statement db) {
 		RectangleDao dao = new RectangleDao(db);
 		for (int i = 0; i < dessin.getFormes().size(); i++) {
-			if(dessin.getFormes().get(i).getType() == 4) {
+			if (dessin.getFormes().get(i).getType() == 4) {
 				dao.ecrire((Rectangle)dessin.getFormes().get(i));
 			}
 		}

@@ -49,10 +49,10 @@ public class CommandLoad implements Command {
 		ResultSet table;
 		try {
 			table = db.executeQuery("select nom from cercle");
-			while(table.next()) {
+			while (table.next()) {
 				res.add(table.getString(1));
 			}
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return res;
@@ -63,10 +63,10 @@ public class CommandLoad implements Command {
 		ResultSet table;
 		try {
 			table = db.executeQuery("select nom from carre");
-			while(table.next()) {
+			while (table.next()) {
 				res.add(table.getString(1));
 			}
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return res;
@@ -77,10 +77,10 @@ public class CommandLoad implements Command {
 		ResultSet table;
 		try {
 			table = db.executeQuery("select nom from rectangle");
-			while(table.next()) {
+			while (table.next()) {
 				res.add(table.getString(1));
 			}
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return res;
@@ -91,10 +91,10 @@ public class CommandLoad implements Command {
 		ResultSet table;
 		try {
 			table = db.executeQuery("select nom from triangle");
-			while(table.next()) {
+			while (table.next()) {
 				res.add(table.getString(1));
 			}
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return res;
@@ -103,7 +103,7 @@ public class CommandLoad implements Command {
 	public void lireCercles(Dessin dessin, Statement db) {
 		CercleDao cercle = new CercleDao(db);
 		ArrayList<String> noms = nomsCercles(db);
-		for(int i = 0 ; i < noms.size(); i++) {
+		for (int i = 0; i < noms.size(); i++) {
 			dessin.getFormes().add(cercle.lire(noms.get(i)));
 		}
 	}
@@ -111,7 +111,7 @@ public class CommandLoad implements Command {
 	public void lireCarres(Dessin dessin, Statement db) {
 		CarreDao carre = new CarreDao(db);
 		ArrayList<String> noms = nomsCarres(db);
-		for(int i = 0 ; i < noms.size(); i++) {
+		for (int i = 0; i < noms.size(); i++) {
 			dessin.getFormes().add(carre.lire(noms.get(i)));
 		}
 	}
@@ -119,7 +119,7 @@ public class CommandLoad implements Command {
 	public void lireRectangles(Dessin dessin, Statement db) {
 		RectangleDao rectangle = new RectangleDao(db);
 		ArrayList<String> noms = nomsRectangles(db);
-		for(int i = 0 ; i < noms.size(); i++) {
+		for (int i = 0; i < noms.size(); i++) {
 			dessin.getFormes().add(rectangle.lire(noms.get(i)));
 		}
 	}
@@ -127,7 +127,7 @@ public class CommandLoad implements Command {
 	public void lireTriangles(Dessin dessin, Statement db) {
 		TriangleDao triangle = new TriangleDao(db);
 		ArrayList<String> noms = nomsTriangles(db);
-		for(int i = 0 ; i < noms.size(); i++) {
+		for (int i = 0; i < noms.size(); i++) {
 			dessin.getFormes().add(triangle.lire(noms.get(i)));
 		}
 	}
