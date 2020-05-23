@@ -12,6 +12,10 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 		db = database;
 	}
 
+	/**
+	 * Ecrit la liste des sous groupes dans la base de données.
+	 * @param obj -> GroupeComposite
+	 */
 	public void ecrireGroupes(GroupeComposite obj) {
 		ArrayList<Groupe> tmp = obj.getSousGroupes();
 		try {
@@ -25,6 +29,10 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 		}
 	}
 
+	/**
+	 * Ecrit la liste des formes dans la base de données.
+	 * @param obj -> GroupeComposite
+	 */
 	public void ecrireFormes(GroupeComposite obj) {
 		ArrayList<Forme> tmp = obj.getFormes();
 		try {
@@ -38,11 +46,19 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 		}
 	}
 	
+	/**
+	 * Ecrit un objet de type Groupe dans la base de données.
+	 * @param obj -> Objet à écrire
+	 */
 	public void ecrire(GroupeComposite obj) {
 		ecrireGroupes(obj);
 		ecrireFormes(obj);
 	}
 
+	/**
+	 * Lit la liste des sous groupes dans la base de données.
+	 * @param obj -> GroupeComposite
+	 */
 	public void lireGroupes(GroupeComposite obj) {
 		ResultSet table;
 		Groupe g;
@@ -61,6 +77,10 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 		}
 	}
 
+	/**
+	 * Lit la liste des formes dans la base de données.
+	 * @param obj -> GroupeComposite
+	 */
 	public void lireFormes(GroupeComposite obj) {
 		CarreDao carre = new CarreDao(db);
 		CercleDao cercle = new CercleDao(db);
@@ -93,7 +113,12 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 			e.printStackTrace();
 		}
 	}
-	
+
+	/**
+	 * Lit un objet de type Groupe dans la base de données.
+	 * @param nom -> Nom du Groupe
+	 * @return Objet de type Groupe initialisé ou null en cas d'erreur
+	 */	
 	public GroupeComposite lire(String nom) {
 		GroupeComposite g = new GroupeComposite(nom);
 		lireFormes(g);
@@ -101,6 +126,11 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 		return g;
 	}
 
+
+	/**
+	 * Supprime un objet de type GroupeCoposite de la base de données.
+	 * @param nom -> Nom de l'objet a supprimer
+	 */
 	public void supprimer(String nom) {
 		try {
 			db.executeUpdate("delete from simple where nomSimple = " + nom);
@@ -110,9 +140,13 @@ public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 		}
 	}
 
+	/**
+	 * Modifie un objet de type GroupeComposite déja présent dans la base de données.
+	 * @param obj -> Groupe à modifier
+	 */
 	public void modifier(GroupeComposite obj) {
-		// TODO Auto-generated method stub
-		
+		supprimer(obj.getNom());
+		ecrire(obj);
 	}
 
 }

@@ -3,6 +3,9 @@ package fr.uvsq.rinshen.ex99;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * Classe chargée de la création et de la supression des tables de la base de données.
+ */
 public class InitBd {
 	private Statement db;
 	
@@ -10,6 +13,9 @@ public class InitBd {
 		db = database;
 	}
 	
+	/**
+	 * Création des tables de la base de données.
+	 */
 	public void init() {
 		initCercle();
 		initCarre();
@@ -19,6 +25,9 @@ public class InitBd {
 		initComposite();
 	}
 	
+	/**
+	 * Table contenant les cercles.
+	 */
 	public void initCercle() {
 		try {
 			db.executeUpdate("create table cercle ("
@@ -31,6 +40,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Table contenant les carrés.
+	 */
 	public void initCarre() {
 		try {
 			db.executeUpdate("create table carre ("
@@ -43,6 +55,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Table contenant les triangles.
+	 */
 	public void initTriangle() {
 		try {
 			db.executeUpdate("create table triangle ("
@@ -58,6 +73,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Table contenant les rectangles.
+	 */
 	public void initRectangle() {
 		try {
 			db.executeUpdate("create table rectangle ("
@@ -71,6 +89,10 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Table contenant le nom des groupes et des formes qui lui sont associées.
+	 * (non utilisée dans la version finale).
+	 */
 	public void initSimple() {
 		try {
 			db.executeUpdate("create table simple ("
@@ -81,6 +103,10 @@ public class InitBd {
 		}
 	}
 
+	/**
+	 * Table Contenant le nom des groupes et des sous groupes qui lui sont associés.
+	 * (non utilisée dans la version finale).
+	 */
 	public void initComposite() {
 		try {
 			db.executeUpdate("create table composite ("
@@ -91,6 +117,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Supression des tables de la base de données.
+	 */
 	public void efface() {
 		effaceCercle();
 		effaceCarre();
@@ -100,6 +129,9 @@ public class InitBd {
 		effaceComposite();
 	}
 	
+	/**
+	 * Suppression de la table cercle.
+	 */
 	public void effaceCercle() {
 		try {
 			db.executeUpdate("Drop table cercle");
@@ -108,6 +140,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Suppression de la table carre.
+	 */
 	public void effaceCarre() {
 		try {
 			db.executeUpdate("Drop table carre");
@@ -116,6 +151,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Suppression de la table Rectangle.
+	 */
 	public void effaceRectangle() {
 		try {
 			db.executeUpdate("Drop table triangle");
@@ -124,6 +162,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Suppresion de la table triangle.
+	 */
 	public void effaceTriangle() {
 		try {
 			db.executeUpdate("Drop table rectangle");
@@ -132,6 +173,9 @@ public class InitBd {
 		}
 	}
 	
+	/**
+	 * Supression de la table simple.
+	 */
 	public void effaceSimple() {
 		try {
 			db.executeUpdate("Drop table simple");
@@ -140,6 +184,9 @@ public class InitBd {
 		}
 	}
 
+	/**
+	 * Supression de la table composite.
+	 */
 	public void effaceComposite() {
 		try {
 			db.executeUpdate("Drop table composite");

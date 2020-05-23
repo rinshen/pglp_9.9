@@ -12,6 +12,10 @@ public class GroupeSimpleDao implements DataAccessObject<GroupeSimple> {
 		db = database;
 	}
 
+	/**
+	 * Ecrit un objet de type Groupe dans la base de données.
+	 * @param obj -> Objet à écrire
+	 */
 	public void ecrire(GroupeSimple obj) {
 		ArrayList<Forme> tmp = obj.getFormes();
 		try {
@@ -25,6 +29,11 @@ public class GroupeSimpleDao implements DataAccessObject<GroupeSimple> {
 		}
 	}
 
+	/**
+	 * Lit un objet de type Groupe dans la base de données.
+	 * @param nom -> Nom du Groupe
+	 * @return Objet de type Groupe initialisé ou null en cas d'erreur
+	 */
 	public GroupeSimple lire(String nom) {
 		GroupeSimple g = new GroupeSimple(nom);
 		CarreDao carre = new CarreDao(db);
@@ -60,6 +69,11 @@ public class GroupeSimpleDao implements DataAccessObject<GroupeSimple> {
 		return g;
 	}
 
+
+	/**
+	 * Supprime un objet de type Groupe de la base de données.
+	 * @param nom -> Nom de l'objet a supprimer
+	 */
 	public void supprimer(String nom) {
 		try {
 			db.executeUpdate("delete from simple where nomGroupe = " + nom);
@@ -68,6 +82,10 @@ public class GroupeSimpleDao implements DataAccessObject<GroupeSimple> {
 		}
 	}
 
+	/**
+	 * Modifie un objet de type Groupe déja présent dans la base de données.
+	 * @param obj -> Groupe à modifier
+	 */
 	public void modifier(GroupeSimple obj) {
 		supprimer(obj.getNom());
 		ecrire(obj);

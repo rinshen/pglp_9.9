@@ -11,6 +11,10 @@ public class RectangleDao implements DataAccessObject<Rectangle> {
 		db = database;
 	}
 
+	/**
+	 * Ecrit un objet de type Rectangle dans la base de données.
+	 * @param obj -> Objet à écrire
+	 */
 	public void ecrire(Rectangle obj) {
 		try {
 			db.executeUpdate("insert into rectangle values ('"
@@ -24,6 +28,11 @@ public class RectangleDao implements DataAccessObject<Rectangle> {
 		}
 	}
 
+	/**
+	 * Lit un objet de type Rectangle dans la base de données.
+	 * @param nom -> Nom du rectangle
+	 * @return Objet de type Rectangle initialisé ou null en cas d'erreur
+	 */
 	public Rectangle lire(String nom) {
 		Rectangle r = null;
 		ResultSet table;
@@ -41,6 +50,10 @@ public class RectangleDao implements DataAccessObject<Rectangle> {
 		return r;
 	}
 
+	/**
+	 * Supprime un objet de type Rectangle de la base de données.
+	 * @param nom -> Nom de l'objet a supprimer
+	 */
 	public void supprimer(String nom) {
 		try {
 			db.executeUpdate("delete from rectangle where nom = '" + nom + "'");
@@ -48,7 +61,11 @@ public class RectangleDao implements DataAccessObject<Rectangle> {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * Modifie un objet de type Rectangle déja présent dans la base de données.
+	 * @param obj -> Rectangle à modifier
+	 */
 	public void modifier(Rectangle obj) {
 		supprimer(obj.getNom());
 		ecrire(obj);

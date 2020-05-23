@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 15,
+      <title>File: 1,
              Errors: 0,
-             Warnings: 54,
+             Warnings: 0,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -46,209 +46,13 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.RectangleDao.java">fr/uvsq/rinshen/ex99/RectangleDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CercleDao.java">fr/uvsq/rinshen/ex99/CercleDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandMove.java">fr/uvsq/rinshen/ex99/CommandMove.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.GroupeSimpleDao.java">fr/uvsq/rinshen/ex99/GroupeSimpleDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandLoad.java">fr/uvsq/rinshen/ex99/CommandLoad.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  8
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.DrawingTui.java">fr/uvsq/rinshen/ex99/DrawingTui.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.GroupeCompositeDao.java">fr/uvsq/rinshen/ex99/GroupeCompositeDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  6
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.InitBd.java">fr/uvsq/rinshen/ex99/InitBd.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandSave.java">fr/uvsq/rinshen/ex99/CommandSave.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  6
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.DrawingApp.java">fr/uvsq/rinshen/ex99/DrawingApp.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandCreate.java">fr/uvsq/rinshen/ex99/CommandCreate.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.TriangleDao.java">fr/uvsq/rinshen/ex99/TriangleDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandAffiche.java">fr/uvsq/rinshen/ex99/CommandAffiche.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.Groupe.java">fr/uvsq/rinshen/ex99/Groupe.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex99.CommandGroupe.java">fr/uvsq/rinshen/ex99/CommandGroupe.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   0

@@ -11,6 +11,10 @@ public class TriangleDao implements DataAccessObject<Triangle> {
 		db = database;
 	}
 
+	/**
+	 * Ecrit un objet de type Triangle dans la base de données.
+	 * @param obj -> Objet à écrire
+	 */
 	public void ecrire(Triangle obj) {
 		try {
 			db.executeUpdate("insert into triangle values ('"
@@ -26,6 +30,11 @@ public class TriangleDao implements DataAccessObject<Triangle> {
 		}
 	}
 
+	/**
+	 * Lit un objet de type Triangle dans la base de données.
+	 * @param nom -> Nom du triangle
+	 * @return Objet de type Triangle initialisé ou null en cas d'erreur
+	 */
 	public Triangle lire(String nom) {
 		Triangle t = null;
 		ResultSet table;
@@ -47,6 +56,10 @@ public class TriangleDao implements DataAccessObject<Triangle> {
 		return t;
 	}
 
+	/**
+	 * Supprime un objet de type Triangle de la base de données.
+	 * @param nom -> Nom de l'objet a supprimer
+	 */
 	public void supprimer(String nom) {
 		try {
 			db.executeUpdate("delete from triangle where nom = '" + nom + "'");
@@ -55,6 +68,10 @@ public class TriangleDao implements DataAccessObject<Triangle> {
 		}
 	}
 
+	/**
+	 * Modifie un objet de type Triangle déja présent dans la base de données.
+	 * @param obj -> Triangle à modifier
+	 */
 	public void modifier(Triangle obj) {
 		supprimer(obj.getNom());
 		ecrire(obj);

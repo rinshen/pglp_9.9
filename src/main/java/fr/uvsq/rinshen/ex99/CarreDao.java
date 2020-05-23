@@ -13,7 +13,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 
 	/**
 	 * Ecrit un objet de type Carre dans la base de données.
-	 * @param obj Objet à écrire
+	 * @param obj -> Objet à écrire
 	 */
 	public void ecrire(Carre obj) {
 		try {
@@ -29,7 +29,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 
 	/**
 	 * Lit un objet de type Carre dans la base de données.
-	 * @param nom Nom du cercle
+	 * @param nom -> Nom du carré
 	 * @return Objet de type Carre initialisé ou null en cas d'erreur
 	 */
 	public Carre lire(String nom) {
@@ -51,7 +51,7 @@ public class CarreDao implements DataAccessObject<Carre> {
 
 	/**
 	 * Supprime un objet de type Carre de la base de données.
-	 * @param nom Nom de l'objet a supprimer
+	 * @param nom -> Nom de l'objet a supprimer
 	 */
 	public void supprimer(String nom) {
 		try {
@@ -61,6 +61,10 @@ public class CarreDao implements DataAccessObject<Carre> {
 		}
 	}
 
+	/**
+	 * Modifie un objet de type Carre déja présent dans la base de données.
+	 * @param obj -> Carré à modifier
+	 */
 	public void modifier(Carre obj) {
 		supprimer(obj.getNom());
 		ecrire(obj);

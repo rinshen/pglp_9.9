@@ -1,6 +1,10 @@
 package fr.uvsq.rinshen.ex99;
 
+/**
+ * Classe représentant un point.
+ */
 public class Point {
+	//Coordonnées du point
 	private int abs;
 	private int ord;
 	
@@ -9,11 +13,19 @@ public class Point {
 		this.setOrd(y);
 	}
 	
+	/**
+	 * Fonction permettant de déplacer le point.
+	 * @param horizontal -> Déplacement horizontal
+	 * @param vertical -> Déplacement vertical
+	 */
 	public void deplacer(int horizontal, int vertical) {
 		abs += horizontal;
 		ord += vertical;
 	}
 	
+	/**
+	 * Fonction permettant d'afficher les coordonnées du point.
+	 */
 	public void afficher() {
 		System.out.println("--abscisses: " + abs);
 		System.out.println("--ordonnées: " + ord);

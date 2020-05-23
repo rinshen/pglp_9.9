@@ -11,6 +11,10 @@ public class CercleDao implements DataAccessObject<Cercle> {
 		db = database;
 	}
 
+	/**
+	 * Ecrit un objet de type Cercle dans la base de données.
+	 * @param obj -> Objet à écrire
+	 */
 	public void ecrire(Cercle obj) {
 		try {
 			db.executeUpdate("insert into cercle values ('"
@@ -23,6 +27,11 @@ public class CercleDao implements DataAccessObject<Cercle> {
 		}
 	}
 
+	/**
+	 * Lit un objet de type Cercle dans la base de données.
+	 * @param nom -> Nom du cercle
+	 * @return Objet de type Cercle initialisé ou null en cas d'erreur
+	 */
 	public Cercle lire(String nom) {
 		Cercle c = null;
 		ResultSet table;
@@ -40,6 +49,12 @@ public class CercleDao implements DataAccessObject<Cercle> {
 		return c;
 	}
 
+
+	/**
+	 * Supprime un objet de type Cercle de la base de données.
+	 * @param nom -> Nom de l'objet a supprimer
+	 */
+
 	public void supprimer(String nom) {
 		try {
 			db.executeUpdate("delete from cercle where nom = '" + nom + "'");
@@ -47,7 +62,11 @@ public class CercleDao implements DataAccessObject<Cercle> {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * Modifie un objet de type Cercle déja présent dans la base de données.
+	 * @param obj -> Cercle à modifier
+	 */
 	public void modifier(Cercle obj) {
 		supprimer(obj.getNom());
 		ecrire(obj);

@@ -1,8 +1,17 @@
 package fr.uvsq.rinshen.ex99;
 
 public class CommandCreate implements Command {
+	/**
+	 * Fonction qui reconnait le nom d'une forme donné en argument et construit l'objet
+	 * correspondant avec les paramètres spécifiés.
+	 * Chaque bloc suit la même structure: On vérifie le nombre d'arguments puis
+	 * on apelle le constructeur de la classe voulue avec ces arguments.
+	 */
 	public void execute(Dessin dessin, String commande) {
+		//On sépare la chaine contenant la commande pour pouvoir accéder a chaque argument
 		String[] form = commande.split(" ");
+		
+		//Si l'utilisateur demande un carré
 		if (form[0].equals("carre")) {
 			if (form.length < 5) {
 				System.out.println("Il manque un ou plusieurs arguments");
@@ -14,6 +23,8 @@ public class CommandCreate implements Command {
 			}
 			return;
 		}
+		
+		//Si l'utilisateur demande un cercle
 		if (form[0].equals("cercle")) {
 			if (form.length < 5) {
 				System.out.println("Il manque un ou plusieurs arguments");
@@ -27,6 +38,8 @@ public class CommandCreate implements Command {
 			}
 			return;
 		}
+		
+		//Si l'utilisateur demande un rectangle
 		if (form[0].equals("rectangle")) {
 			if (form.length < 6) {
 				System.out.println("Il manque un ou plusieurs arguments");
@@ -41,6 +54,8 @@ public class CommandCreate implements Command {
 			}
 			return;
 		}
+		
+		//Si l'utilisateur demande un triangle
 		if (form[0].equals("triangle")) {
 			if (form.length < 8) {
 				System.out.println("Il manque un ou plusieurs arguments");
@@ -56,6 +71,8 @@ public class CommandCreate implements Command {
 			}
 			return;
 		}
+		
+		//Si l'utilisateur demande un groupe simple
 		if (form[0].equals("simple")) {
 			if (form.length < 2) {
 				System.out.println("Il manque un ou plusieurs arguments");
@@ -65,6 +82,8 @@ public class CommandCreate implements Command {
 			}
 			return;
 		}
+		
+		//Si l'utilisateur demande un groupe composite
 		if (form[0].equals("composite")) {
 			if (form.length < 2) {
 				System.out.println("Il manque un ou plusieurs arguments");
@@ -74,6 +93,8 @@ public class CommandCreate implements Command {
 			}
 			return;
 		}
+		
+		//Si la forme en argument n'est pas prise en charge
 		System.out.println("Forme non reconnue");
 		System.out.println(form[0]
 				+ " n'est pas une forme prise en charge par l'application");
