@@ -14,9 +14,9 @@ par exemple carre c 10 10 20 crée un carré centré sur (10, 10) et de côté 2
 Pour créer un groupe:
 Il faut utiliser la commande simple ou composite suivant que l'on veuille créer un groupe simple ou composite. Leur syntaxe est:
 simple nom
-Composite nom
+composite nom
 Les groupes crées sont vides au départ mais on peut y rajouter des formes ou des sous groupes avec la commande grouper
-Pour garantir la cohérence du dessin, lorsqu'une forme est ajoutée à un groupe, elle ne peut plus être atteinte par une modification individuelle mais seulement par une modificationde groupe.
+Pour garantir la cohérence du dessin, lorsqu'une forme est ajoutée à un groupe, elle ne peut plus être atteinte par une modification individuelle mais seulement par une modification de groupe.
 
 Commandes:
 pour déplacer une forme ou un groupe
@@ -38,4 +38,4 @@ Pour quitter le programme
   exit
 
 notes sur l'enregistrement du dessin:
-Après avoir enregistré un dessin dans la base de données, le dessin est supprimé de la mémoire du processus, ce qui permet d'éviter d'enregistrer le meme dessin deux fois. De même, lorsqu'un dessin est chargé, la base de données est entièrement effacée pour éviter de charger deux fois le même dessin. De plus j'ai fais le choix lors de l'enregistrement du dessin de ne pas enregistrer les groupes, en effet ils servent a manipuler les formes de manière dynamique mais n'ont pas vocation a perdurer et les enregistrer n'aurait donc pas beaucoup de sens.
+Après avoir enregistré un dessin dans la base de données, le dessin est supprimé de la mémoire du processus, ce qui permet d'éviter d'enregistrer le même dessin deux fois (pour éviter des objets dupliqués dans la base de données). De même, lorsqu'un dessin est chargé, la base de données est entièrement effacée pour éviter de charger deux fois le même dessin. De plus j'ai fait le choix lors de l'enregistrement du dessin de ne pas enregistrer les groupes, en effet ils servent a manipuler les formes de manière dynamique mais n'ont pas vocation a perdurer et les enregistrer n'aurait donc pas beaucoup de sens.
