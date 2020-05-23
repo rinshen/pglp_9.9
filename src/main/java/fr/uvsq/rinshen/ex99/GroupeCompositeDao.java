@@ -5,6 +5,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * Permet d'enregistrer des GroupeComposite.
+ * Classe non utilisée dans la version finale.
+ */
 public class GroupeCompositeDao implements DataAccessObject<GroupeComposite> {
 	Statement db;
 	

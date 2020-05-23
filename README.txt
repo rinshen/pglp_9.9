@@ -1,4 +1,6 @@
 Le programme peut manipuler des cercles, des carrés, des triangles et des rectangles. Ces formes peuvent etre regroupées dans des groupes. Il y a deux types de groupes: les simples qui ne contiennent que des formes et les composites qui peuvent contenir à la fois des formes et d'autres groupes.
+Pour démarrer le programme la commande est java -jar ex99-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+Pour quitter la commande est exit
 
 Pour créer une forme:
 Il suffit d'entrer le type de l'objet (en minuscules et sans accent), suivi des données nécessaires pour son initialisation:
@@ -21,7 +23,7 @@ pour déplacer une forme ou un groupe
   move nom décalage_x décalage_y
 
 pour insérer un objet dans un groupe
-  grouper nom_groupe nom_objet_a_insérer
+  grouper nom_groupe nom_objet_à_insérer
 
 pour afficher le dessin
   afficher
@@ -31,6 +33,9 @@ pour enregistrer le dessin
 
 pour charger un dessin déja enregistré
   charger
+  
+Pour quitter le programme
+  exit
 
 notes sur l'enregistrement du dessin:
 Après avoir enregistré un dessin dans la base de données, le dessin est supprimé de la mémoire du processus, ce qui permet d'éviter d'enregistrer le meme dessin deux fois. De même, lorsqu'un dessin est chargé, la base de données est entièrement effacée pour éviter de charger deux fois le même dessin. De plus j'ai fais le choix lors de l'enregistrement du dessin de ne pas enregistrer les groupes, en effet ils servent a manipuler les formes de manière dynamique mais n'ont pas vocation a perdurer et les enregistrer n'aurait donc pas beaucoup de sens.

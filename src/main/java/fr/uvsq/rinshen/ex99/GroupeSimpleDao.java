@@ -5,6 +5,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * Permet d'enregistrer des GroupeSimple.
+ * Classe non utilisée dans la version finale.
+ */
 public class GroupeSimpleDao implements DataAccessObject<GroupeSimple> {
 	private Statement db;
 
